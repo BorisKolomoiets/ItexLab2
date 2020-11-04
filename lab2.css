@@ -1,0 +1,72 @@
+li {
+	height: 30px;
+    display: block;
+    margin-left: 12px;
+    font-size: 12px;
+}
+
+li:hover {
+    color: #f10000;
+    font-size: 18px;
+    font-style: italic;
+}
+
+#first,#second,#third {
+	display: none;
+}
+
+label::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #05b1d9;
+    vertical-align: middle;
+    margin-left: -10px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+input:checked + label::before {
+    transition: 0.4s;
+    background-image: url(https://freesvg.org/img/1554130833.png);
+	background-size: 100%;
+}
+
+.container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-left: 55px;
+}
+
+.box {
+    height: 70px;
+    width: 50px;
+    background: #ffff1c;
+    margin: 2px;
+}
+
+.boxFirst {
+    background: #39ef39;
+    height: 70px;
+    width: 50px;
+    margin: 2px;;
+}
+
+.boxEight {
+    background: #ffff1c;
+    width: 65px;
+    height: 70px;
+    margin: 2px;
+}
+
+.break {
+    flex-basis: 100%;
+}
+
+.boxNine {
+    background: #39ef39;
+    width: 444px;
+    height: 70px;
+    margin: 2px;
+}
