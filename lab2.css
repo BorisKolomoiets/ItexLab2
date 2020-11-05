@@ -1,3 +1,35 @@
+body {
+    --maincolor: black;
+}
+element {
+    background-color: var(--maincolor);
+}
+
+.block1 {
+    position: relative;
+    background: #54dd1a;
+    height: 160px;
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #000;
+}
+.block2 {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    background: #e01737;
+    width: 50px;
+    height: 50px;
+}
+
+.divForFloat {
+    height: 300px;
+}
+
+.imgForFloat {
+    float: right;
+}
+
 li {
 	height: 30px;
     display: block;
@@ -28,7 +60,7 @@ label::before {
 }
 
 input:checked + label::before {
-    transition: 0.4s;
+    transition: 0.2s;
     background-image: url(https://freesvg.org/img/1554130833.png);
 	background-size: 100%;
 }
